@@ -1,0 +1,38 @@
+name: CookieMeme
+main: io.github.shadowcube264.cookiememe.CookieMeme
+version: 0.0.2
+author: ShadowCube264
+description: Memes and trolls
+commands:
+  hbtroll:
+    description: Creates a fake join message
+    usage: /hbtroll <player>
+    permission: cookiememe.hbtroll
+    permission-message: Nope.
+  yeetusfeetus:
+    description: Allows you to yeet others
+    usage: /yeetusfeetus
+    permission: cookiememe.yeetusfeetus
+    permission-message: Nope.
+  unicorn:
+    description: Unicornifies other players
+    usage: /unicorn <player>
+    permission: cookiememe.unicorn
+    permission-message: Nope.
+permissions:
+  cookiememe.*:
+    description: Gives access to all commands
+    default: op
+    children:
+      cookiememe.hbtroll: true
+      cookiememe.yeetusfeetus: true
+      cookiememe.unicorn: true
+  cookiememe.hbtroll:
+    description: Gives access to /hbtroll
+    default: op
+  cookiememe.yeetusfeetus:
+    description: Gives access to /yeetusfeetus
+    default: op 
+  cookiememe.unicorn:
+    description: Gives access to /unicorn
+    default: op
